@@ -4,11 +4,11 @@ ruby-1.9.3-on-debian-squeeze
 Description
 ===========
 
-ruby-1.9.3 on Debian Squeeze 
+ruby-1.9.3 on Debian Squeeze with RVM
 
 ## Platforms
 
-* Tested only on Debian Squeeze
+* Tested on Debian Squeeze only
 
 ## Usage
 
