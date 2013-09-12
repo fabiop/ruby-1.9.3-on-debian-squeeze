@@ -4,7 +4,9 @@
 
 FORCERVM="" # force rvm reinstallation if it's not null
 
-DEBPKG_LIST="ruby curl git subversion build-essential libreadline6-dev git-core zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf automake libtool bison"
+DEBPKG_LIST="ruby curl git subversion build-essential libreadline6-dev git-core \
+             zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev \
+             libxslt-dev autoconf automake libtool bison"
 
 function rvm_installer() {
 
@@ -22,13 +24,15 @@ else
 fi
 
 # set rvm for login shells
-echo '[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm" # Load RVM function' >> /etc/profile.d/source_rvm.sh
+echo '[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm" # Load RVM function' \
+>> /etc/profile.d/source_rvm.sh
 chmod +x /etc/profile.d/source_rvm.sh
 
 # set rvm for non login shells
 if ! grep -q 'Load RVM function' /etc/bash.bashrc
 then
-  echo '[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm" # Load RVM function' >> /etc/bash.bashrc
+  echo '[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm" # Load RVM function' \
+  >> /etc/bash.bashrc
 fi
 
 # set rvm for this script now wile running 
