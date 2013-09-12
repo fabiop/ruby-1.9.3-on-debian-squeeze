@@ -14,15 +14,14 @@ ruby-1.9.3 on Debian Squeeze
 
 Once rvm is installed you can do things like these:
 
-# rvm use 1.9.3
+shell> rvm use 1.9.3
 Using /usr/local/rvm/gems/ruby-1.9.3-p448
-# ruby -v
+shell> ruby -v
 ruby 1.9.3p448 (2013-06-27 revision 41675) [i686-linux]
-# rvm use system
+shell> rvm use system
 Now using system ruby.
-# ruby -v
+shell> ruby -v
 ruby 1.8.7 (2010-08-16 patchlevel 302) [i486-linux]
-
 
 Huzzah!
 
