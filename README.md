@@ -14,6 +14,10 @@ Tested on:
 
 ## Usage
 
+### Install with: ###
+
+shell> curl https://raw.github.com/fabiop/ruby-1.9.3-on-debian-squeeze/master/install.sh| bash
+
 Once rvm is installed you can do things like these:
 
 shell> rvm use 1.9.3
